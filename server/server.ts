@@ -3,7 +3,7 @@ const PORT = 3000;
 import React from "react";
 import ReactDOMServer from "react-dom/server";
 import express from "express";
-import App from "../client/components/App";
+import App from "../app/components/App";
 import fs from "fs";
 import path from "path";
 

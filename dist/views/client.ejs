@@ -7,5 +7,6 @@
   <body>
     <div id="root"><%- component %></div>
     <script defer="defer" src="<%= assets["client.js"] %>"></script>
+    <script>window.__INITIAL_DATA__ = '<%- initialData %>'</script>
   </body>
 </html>

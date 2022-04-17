@@ -1,7 +1,17 @@
-import React from 'react';
+import React from "react";
+import { Route } from "react-router-dom";
+import routes from "../routes";
+import NoMatch from "./NoMatch";
 
 const App = () => {
-    return <h1>This all is Server Side Rendered!!!</h1>
-}
+  return (
+    <>
+      {routes.map((route) => (
+        <Route key={route.path} path={route.path} component={route.component} />
+      ))}
+      <Route path="*" component={NoMatch} />
+    </>
+  );
+};
 
 export default App;

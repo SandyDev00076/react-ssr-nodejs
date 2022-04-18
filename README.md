@@ -1,5 +1,5 @@
 # react-ssr-nodejs
-Implementing React SSR with NodeJS + ExpressJS. I'll be using Webpack as the bundler at both client and server sides, and ejs for HTML templating.
+Implementing React SSR + TypeScript with NodeJS + ExpressJS. I'll be using Webpack as the bundler at both client and server sides, and ejs for HTML templating.
 
 ## Client Side
 The primary objective at the client side is to get the entire component tree, and pass it to ReactDOM.hydrate() function which basically checks for server-rendered markup and attaches only the **event handlers** to it.
